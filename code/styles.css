@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Skranji&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background: #302f2fec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Title */
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-shadow: 0 0 2px #ccc;
+  margin-top: 20px;
+}
+.title::after{
+  content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    background-color: #fff;
+    justify-content: center;
+    box-shadow: 0 0 1.5px rgb(66, 66, 66);
+    opacity: 0.65;
+}
+
+/* Box */
+#board{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  background: #1d1d1d;
+  margin: 2px;
+  box-shadow: 0 0 2px #000;
+  transition: 3s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+/* Footer */
+
+.footer{
+  left: 30px; bottom: 50px;
+  color:#fff;
+}
+
+.info {
+  position: fixed; /* Фиксированное положение */
+  left: 0; bottom: 60px; /* Левый нижний угол */
+  width: 100%; /* Ширина слоя */
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+}
+.col {
+  width: 30%;
+  font-family: 'Oswald', sans-serif;
+}
+#first_col{
+  text-transform: uppercase;
+}
+#second_col{
+  margin-top: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+#second_col:hover{
+  text-decoration: underline;
+  
+}
+/* Social */
+#social_item {
+margin: 0 5px;
+}
+a{
+  text-decoration: none;
+  color: -webkit-link;
+  cursor: pointer;
+  color: #fff;
+}
+i {
+  font-size: 20px;
+}
+
+
+
+
+#copyright{
+  position: fixed; /* Фиксированное положение */
+  left: 0; bottom: 0; /* Левый нижний угол */
+  padding: 12px; /* Поля вокруг текста */
+  width: 100%; /* Ширина слоя */
+  text-align: center;
+  border-top: 1px solid #e5e5e50d;
+  color: #a99c9c;
+  font-size: 14px;
+  font-weight: 200;
+}
+#copyright span {
+  color: #ffffffb0;
+font-weight: 400;
+}
